@@ -21,3 +21,8 @@ conda create -n finder-rl python=3.10 -y
 conda activate finder-rl
 pip install -r FINDER-ALTHORIGITHMS/requirements.txt
 ```
+
+If you see a build error like `AttributeError: module 'collections' has no
+attribute 'Iterable'` while installing Cython, ensure you are using the updated
+`requirements.txt` (Cython 0.29.37 or newer) and that your pip cache is not
+pinning an older `cython==0.29.13` wheel.
