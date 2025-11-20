@@ -11,3 +11,13 @@ pip install -r FINDER-ALTHORIGITHMS/requirements.txt
 ```
 
 Ensure your system provides CUDA 11.8-compatible libraries (the unified `tensorflow` 2.13 wheel expects them) before running training or evaluation.
+
+### Recommended Python/Conda setup
+
+TensorFlow 2.13 supports Python 3.8–3.11; the updated dependency pins work reliably on Python 3.10. To create a conda environment that matches the tested setup:
+
+```bash
+conda create -n finder-rl python=3.10 -y
+conda activate finder-rl
+pip install -r FINDER-ALTHORIGITHMS/requirements.txt
+```
